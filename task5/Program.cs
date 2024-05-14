@@ -1,4 +1,4 @@
-﻿//ввод данных с консоли
+﻿//ввод данных с консоли вывести на консоль
 
 
 int size = 13;
@@ -13,3 +13,8 @@ while (i < size)
     array[i] = Convert.ToInt32(input);
     i++;
 }
+
+foreach (int e in array)
+    {
+        Console.Write($"{e}, ");
+    }
