@@ -1,19 +1,20 @@
 ﻿//ввод данных с консоли вывести на консоль
 
 
-int size = 13;
-int[] array = new int[size];
-int i = 0;
+int size = 13;//ввод переменной  размер массива
+int[] array = new int[size];//ввод переменной  массива
+int i = 0;// ввод переменной начала массива
 
-while (i < size)
+while (i < size)//создали цикл "пока"
 {
     Console.WriteLine("введите целое число массива:");
 
-    string input = Console.ReadLine();
-    array[i] = Convert.ToInt32(input);
+    string input = Console.ReadLine();//создали переменную строки для сохранения введенных элементов8
+    
+    array[i] = Convert.ToInt32(input);//ввод элементов массива
     i++;
 }
-
+//вывод на консоль  массива
 foreach (int e in array)
     {
         Console.Write($"{e}, ");
