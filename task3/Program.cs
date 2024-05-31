@@ -2,25 +2,25 @@
 
 
 
-void ZeroEvenElements(int[] numbers)
-{
-    for (int i = 0; i < numbers.Length; i++)
+void ZeroEvenElements(int[] numbers) //создали безвозвратную локальную функцию, для обнуления четных  значений
+{                                    // и размещение в массиве int[] numbers
+    for (int i = 0; i < numbers.Length; i++)// создали цикл
     {
-        if (numbers[i] % 2 == 0)
+        if (numbers[i] % 2 == 0)//ввели условия обнуления
         {
-            numbers[i] = 0;
-        }
+            numbers[i] = 0;//записываем  0 для i элемента массива если значение четно
+            }
     }
 }
 
-void PrintArray(int[] numbers)
+void PrintArray(int[] numbers)// создали локальную функцию для вывода массива numbers на консоль
 {
-    foreach (int e in numbers)
+    foreach (int e in numbers)//создали цикл "форэч" для вывода на консоль
     {
         Console.Write($"{e} ");
     }
 }
 
-int[] array = { 9, 8, 12, 5, 13, 4, 7 };
-ZeroEvenElements(array);
-PrintArray(array);
+int[] array = { 9, 8, 12, 5, 13, 4, 7 };//создали переменный цельный массив array 
+ZeroEvenElements(array);// вызываем локальную функцию и вводим в нее параметр массива array
+PrintArray(array); //вызываем локальную функцию и выводим на консоль обнуленными чётными  array 
